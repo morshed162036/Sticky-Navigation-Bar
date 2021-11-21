@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Sticky Navigation Bar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav id="navbar">
+                <img src="logo.png" class="logo">
+                <ul id="menu">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Product</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!
+        </p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!
+        </p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laudantium fuga cumque, saepe nobis eos distinctio quidem.
+            Nisi dolor mollitia incidunt fuga dolorem tenetur optio nesciunt pariatur eaque, corrupti et rerum!
+        </p>
+
+        <script>
+            var navbar = document.getElementById("navbar");
+            var menu = document.getElementById("menu");
+
+            window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    navbar.classList.add("sticky");
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
